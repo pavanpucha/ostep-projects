@@ -38,4 +38,3 @@ void filecopy(FILE *input, FILE *output){
     while(( c= getc(input)) != EOF)
         putc(c, output);
 }
-
