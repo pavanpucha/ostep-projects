@@ -52,7 +52,7 @@ int main(int argc, char *argv[])
 void minigrep(FILE *input, char *grep_arg)
 {
     char read_line[SIZE];
-    while (fgets(read_line, SIZE, input || stdin) != NULL)
+    while (fgets(read_line, SIZE, input) != NULL)
     {
         if (strstr(read_line, grep_arg))
             printf("%s", read_line);
